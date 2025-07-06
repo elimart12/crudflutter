@@ -15,6 +15,54 @@ Para almacenar información localmente en una aplicación móvil usando SQLite, 
 4. Haz todas las operaciones en segundo plano usando async/await.
 5. Valida los datos antes de insertarlos.
 6. Aplica una arquitectura adecuada para separar responsabilidades.
+IA utilizada: ChatGPT
+Prompt usado:
+"¿Cómo puedo implementar una base de datos SQLite en Flutter para realizar operaciones CRUD? ¿Qué paquetes recomiendas y cuáles son las mejores prácticas?"
+
+Respuesta de ChatGPT:
+"Para implementar SQLite en Flutter, puedes usar el paquete sqflite, que es el más popular para trabajar con bases de datos SQLite en aplicaciones móviles. Aquí tienes un resumen de los pasos:
+
+Agrega las dependencias en pubspec.yaml:
+
+yaml
+dependencies:
+  sqflite: ^2.3.0
+  path: ^2.1.0
+Crea una clase para manejar la base de datos:
+
+Define la estructura de la tabla.
+
+Usa openDatabase para inicializar la DB.
+
+Implementa métodos para insert, query, update y delete.
+
+Ejemplo de operaciones CRUD:
+
+Crear (Create):
+
+dart
+await db.insert('tabla', {'nombre': 'Ejemplo'});  
+Leer (Read):
+
+dart
+List<Map> lista = await db.query('tabla');  
+Actualizar (Update):
+
+dart
+await db.update('tabla', {'nombre': 'Nuevo'}, where: 'id = ?', whereArgs: [1]);  
+Eliminar (Delete):
+
+dart
+await db.delete('tabla', where: 'id = ?', whereArgs: [1]);  
+Mejores prácticas:
+
+Usa singleton para evitar múltiples instancias de la DB.
+
+Maneja errores con try-catch.
+
+Cierra la conexión cuando no se use.("*)
+
+
 
 📺 Video recomendado:
 https://www.youtube.com/watch?v=UpKrhZ0Hppk
