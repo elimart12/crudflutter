@@ -1,0 +1,21 @@
+Yo Elizabeth Marte con 20211604 Confirmo que domino el guardar y leer información desde alguna tecnología móvil y estoy dispuesto en cualquier momento a hacer un demo de como se hace eso.. . Si me solicitan hacer el demo en la clase, digo que no,  no puedo y he subido este archivo indicando que me lo se... por favor profesor quíteme 10 puntos. 
+
+IA utilizada: ChatGPT (OpenAI)
+
+Prompt utilizado:
+“¿Qué recomendaciones me das para almacenar información localmente en una aplicación móvil usando SQLite y realizar operaciones CRUD?”
+
+Respuesta de la Inteligencia Artificial:
+
+Para almacenar información localmente en una aplicación móvil usando SQLite, te recomiendo lo siguiente:
+
+1. Usa un framework adecuado como Flutter con el paquete sqflite.
+2. Define bien tus modelos de datos.
+3. Crea un helper que gestione la base de datos y las operaciones CRUD.
+4. Haz todas las operaciones en segundo plano usando async/await.
+5. Valida los datos antes de insertarlos.
+6. Aplica una arquitectura adecuada para separar responsabilidades.
+
+📺 Video recomendado:
+https://www.youtube.com/watch?v=UpKrhZ0Hppk
+*Flutter Tutorial - SQLite CRUD Operations with Sqflite Package*
